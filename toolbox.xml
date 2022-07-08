@@ -1,0 +1,9 @@
+<xml xmlns="https://developers.google.com/blockly/xml" id="toolbox" style="display: none">
+  <category name="MPU6050" colour="#2ECC71" icon="compass">
+    <block type="mpu_init" />
+    <!-- <block type="mpu_reset" /> -->
+    <block type="mpu_get_accel" />
+    <block type="mpu_get_gyro" />
+    <block type="mpu_is_shake" />
+  </category>
+</xml>
