@@ -2,6 +2,7 @@ import time
 import math
 from machine import SoftI2C, Pin
 from micropython import const
+from yolobit import *
 #from utility import *
 
 PWR_MGMT_1   = const(0x6B)
@@ -20,7 +21,7 @@ TEMP_OUT_H   = const(0X41)
 
 class Motion:
     def __init__(self, address=0x68):
-        self._i2c = SoftI2C(scl=Pin(22), sda=Pin(21)) 
+        self._i2c = SoftI2C(scl=Pin(pin19.pin), sda=Pin(pin20.pin)) 
         self._addr = address
 
         #Close the sleep mode
